@@ -39,10 +39,5 @@ Used Plugins
 - Bootstrap colorpicker
 - AdminLTE
 
-Preview
-=======
-### [Live](http://www.sejan.ml)
-
-
 
 #N.B: If you want to extend this please don't remove the original authors name.
