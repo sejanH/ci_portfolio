@@ -4,9 +4,6 @@
  */
 
 CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here.
-	// For the complete reference:
-	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
 
 	// The toolbar groups arrangement, optimized for two toolbar rows.
 	config.toolbarGroups = [
@@ -22,14 +19,15 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
 		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
 		{ name: 'styles' },
-		{ name: 'colors' },
-		{ name: 'about' }
+		{ name: 'colors' }
 	];
 
 	// Remove some buttons, provided by the standard plugins, which we don't
 	// need to have in the Standard(s) toolbar.
-	config.removeButtons = 'Underline,Subscript,Superscript';
-
+	//config.removeButtons = 'Underline,Subscript,Superscript';
+	config.entities = false;
+config.enterMode = CKEDITOR.ENTER_BR;
+// config.forceSimpleAmpersand = true;
 	// Se the most common block elements.
 	config.format_tags = 'p;h1;h2;h3;pre';
 
@@ -42,5 +40,18 @@ CKEDITOR.editorConfig = function( config ) {
 	config.disallowedContent = 'script';
 	config.protectedSource.push( /<i class[\s\S]*?\>/g );
     config.protectedSource.push( /<\/i>/g );
+
+
+    //upload image
+ 	//config.filebrowserBrowseUrl='browser/browse.php';
+ 	config.filebrowserUploadUrl='../browser/upload';
+    //plugins
+    config.extraPlugins = 'uploadimage';
+    config.extraPlugins = 'uploadwidget';
+    config.extraPlugins = 'widget';
+    config.extraPlugins = 'clipboard';
+    config.extraPlugins = 'filetools';
+    config.extraPlugins = 'notification';
+    config.extraPlugins = 'notificationaggregator';
 
 };

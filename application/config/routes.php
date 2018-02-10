@@ -18,6 +18,7 @@ $route['admin/section/(:any)']				= "admin/panel/section/$1";
 $route['admin/section/edit/(:any)']			= "admin/panel/editSection/$1";
 $route['admin/section_order']               = "admin/action/section_order";
 $route['admin/changeTheme']					= "admin/panel/changeTheme";
+$route['admin/browser/upload']				= "admin/panel/upload";
 
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';

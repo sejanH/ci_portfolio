@@ -156,6 +156,15 @@ public function editSection($section=NULL){
     }
   }
 
+  public function upload(){
+    $isLoggedIn = $this->session->userdata('isLoggedIn');
+    if(!isset($isLoggedIn) || $isLoggedIn != TRUE){
+          redirect('admin/login');
+        }
+        $this->load->view('admin/browser/upload');
+
+  }
+
 }
 
 

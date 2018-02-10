@@ -12,7 +12,9 @@
     <?
 
         if($title!='Sections &raquo; Add new'){
-          echo "<form id='section-form' method='post'>";
+          echo "<div class='row'>";
+          echo "<div class='col-md-8'>";
+          echo "<form id='section-form' method='post' class='form-horizontal'>";
           echo "<div class='form-inline'>";
           echo "<input class='form-control' id='editSection' name='editSection' value='".$content[0]->section."'>";
           echo "<input id='editcp9' type='text' name='editcp9' class='form-control' value='".$content[0]->color."'/>";
@@ -21,6 +23,13 @@
           echo "<button class='btn btn-mybtn' id='btnSubmit'>Submit</button>";
           echo "<span id='logerr'></span>";
           echo "</form>";
+          echo "</div>";
+          echo "<div class='col-md-3'>";
+          echo "<div class='alert alert-warning'>";
+          echo "Use ##(Hashtag) to differentiation new section of the page";
+          echo "</div>";
+          echo "</div>";
+          echo "</div>";
         }else{
           echo "<form id='sectionadd-form' method='post'>";
           echo "<div class='form-inline'>";

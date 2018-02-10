@@ -8,6 +8,8 @@ class Welcome extends CI_Controller {
 	{
 		$data['title'] = $this->getContent->getTitle();
 		$data['content'] = $this->getContent->pageContent();
+		$this->load->view('header',$data);
 		$this->load->view('index',$data);
+		$this->load->view('footer');
 	}
 }
