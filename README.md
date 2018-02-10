@@ -32,12 +32,12 @@ Contact
 
 Used Plugins
 ============
-- Bootstrap.css v3.3.6 (http://getbootstrap.com)
-- Bootstrap.js v3.3.6 (http://getbootstrap.com)
+- Bootstrap.css v3.3.7 (http://getbootstrap.com)
+- Bootstrap.js v3.3.7 (http://getbootstrap.com)
 - jQuery v3.1.1
 - jQuery UI v1.12.1
 - PagePiling JS by [Alvaro Trigo](https://alvarotrigo.com)
-- ckeditor
+- CKeditor
 - Bootstrap colorpicker
 - AdminLTE
 
