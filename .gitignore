@@ -1,8 +1,8 @@
 /.git
-!/.gitignore
-!/.ftpconfig
-!/.ftpignore
-!/.htaccess
+/.gitignore
+/.ftpconfig
+/.ftpignore
+/.htaccess
 /system
 /application/config/config.php
 /application/config/database.php
