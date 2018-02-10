@@ -1,7 +1,0 @@
-.git
-.ftpconfig
-.ftpignore
-system
-/system
-application/config/database.php
-/application/config/database.php
